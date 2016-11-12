@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('bookRatingApp', ['bookRatingApp.rating'])
+  angular.module('bookRatingApp', [])
     .controller('MainController', function($scope) {
         $scope.rating = 1;
         // controller
