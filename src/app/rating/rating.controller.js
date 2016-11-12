@@ -1,8 +1,7 @@
 (function() {
+  angular.module('sui-rating').controller('RatingController', RatingController);
 
-  angular.module('sui-rating').controller('MainController', MainController);
-
-  function MainController() {
-    this.rating = 1;
+  function RatingController() {
+    this.current = 1;
   }
 })();

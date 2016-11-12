@@ -6,8 +6,8 @@
   <link href="node_modules/semantic-ui-css/semantic.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div ng-controller="MainController as main">
-      <rating id="my-rating" size="large" type="heart" ng-model="main.rating"></rating>
+    <div ng-controller="RatingController as rating">
+      <rating id="my-rating" size="large" type="heart" ng-model="rating.current"></rating>
     </div>
 
     <script src="node_modules/angular/angular.js"></script>
