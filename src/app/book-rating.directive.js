@@ -2,7 +2,7 @@
   'use strict';
 
 
-  angular.module('bookRatingApp', [])
+  angular.module('bookRatingApp')
 
   .directive('rating', function(){
       return {
