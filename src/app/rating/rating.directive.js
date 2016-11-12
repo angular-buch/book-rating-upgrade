@@ -4,8 +4,6 @@
   function directive() {
     return {
       restrict: 'E',
-      replace: true,
-      transclude: true,
       scope: {
         id: '@',
         size: '@',
