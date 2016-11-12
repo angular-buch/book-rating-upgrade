@@ -23,31 +23,32 @@
         // save how the current rating
         var current = 0;
 
-        if (scope.model == undefined)
+        if (scope.model == undefined) {
           scope.model = 0;
+        }
 
-        if (scope.model < 1 && scope.model > 5)
+        if (scope.model < 1 && scope.model > 5) {
           scope.model = 0;
-
+        }
         //
         // Set up icon type
         //
-        if (scope.type == undefined)
+        if (scope.type == undefined) {
           scope.type = 'star';
-
+        }
         //
         // Set up size
         //
-        if (scope.size == undefined)
+        if (scope.size == undefined) {
           scope.div_class = 'ui rating ' + scope.type;
-        else if (scope.size == 'small')
-          scope.div_class = 'ui small ' + scope.type + ' rating';
-        else if (scope.size == 'large')
-          scope.div_class = 'ui large ' + scope.type + ' rating';
-        else if (scope.size == 'huge')
-          scope.div_class = 'ui huge ' + scope.type + ' rating';
-
-        //
+        } else if (scope.size == 'small') {
+            scope.div_class = 'ui small ' + scope.type + ' rating';
+        } else if (scope.size == 'large') {
+              scope.div_class = 'ui large ' + scope.type + ' rating';
+        } else if (scope.size == 'huge') {
+                scope.div_class = 'ui huge ' + scope.type + ' rating';
+        }
+          //
         // set up icon class
         //
         scope.icon_class = 'icon';
@@ -84,10 +85,11 @@
             document.getElementById(scope.id + i).className = 'icon active';
           }
 
-          if (icon_index)
+          if (icon_index) {
             current = icon_index;
-          else
+          } else {
             current = 0;
+          }
         };
 
         //
