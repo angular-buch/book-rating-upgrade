@@ -1,6 +1,6 @@
 (function() {
 
-    angular.module('bookRatingApp').controller('MainController', function($scope) {
+    angular.module('sui-rating').controller('MainController', function($scope) {
         $scope.rating = 1;
     });
 

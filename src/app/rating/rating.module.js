@@ -1,3 +1,3 @@
 (function() {
-  angular.module('bookRatingApp', []);
+  angular.module('sui-rating', []);
 })();

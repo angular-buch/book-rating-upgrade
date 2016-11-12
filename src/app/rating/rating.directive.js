@@ -1,5 +1,5 @@
 (function() {
-  angular.module('bookRatingApp')
+  angular.module('sui-rating')
 
   .directive('rating', function(){
       return {
