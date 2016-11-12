@@ -1,7 +1,4 @@
 (function() {
-  'use strict';
-
-
   angular.module('bookRatingApp')
 
   .directive('rating', function(){
