@@ -59,7 +59,6 @@
           for (var i = 1; i <= icon_index; i++) {
             document.getElementById(scope.id + i).className = 'icon active';
           }
-
         };
 
         //
@@ -80,7 +79,7 @@
         //
         // Handle click
         //
-        scope.click = function (icon_index, mode) {
+        scope.click = function (icon_index) {
           for (var i = 1; i <= icon_index; i++) {
             document.getElementById(scope.id + i).className = 'icon active';
           }
