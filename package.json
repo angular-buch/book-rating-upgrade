@@ -1,0 +1,21 @@
+{
+  "name": "angularjs-book-rating",
+  "description": "AngularJS book rating app",
+  "version": "0.0.1",
+  "keywords": [
+    "AngularJS",
+    "book",
+    "rating"
+  ],
+  "scripts": {
+    "start": "http-server"
+  },
+  "author": "",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "semantic-ui-css": "^2.2.4"
+  },
+  "devDependencies": {
+    "http-server": "^0.9.0"
+  }
+}
