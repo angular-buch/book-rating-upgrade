@@ -29,6 +29,9 @@
           // is rating already checked
           var checked = false;
 
+          // save how the current rating
+          var current = 0;
+
           //
           // Set up icon type
           //
@@ -56,39 +59,39 @@
           // Handle mouse enter
           //
           scope.mouse_enter = function(icon_index){
-              if (checked == true)
-                  return;
-             var i = 1;
-              for (i; i <= icon_index; i++){
-                  document.getElementById(scope.id + i).className = 'icon active';
-              }
-             return;
+             for (var i = 1; i <= icon_index; i++){
+               document.getElementById(scope.id + i).className = 'icon active';
+             }
+
           };
 
           //
           // Handle mouse leave
           //
           scope.mouse_leave = function(icon_index){
-              if (checked == true)
-                  return;
-             var i = 1;
-              for (i; i <= 5; i++){
-                  document.getElementById(scope.id + i).className = 'icon';
-              }
-             return;
+            var firstNotRatedSymbol = current + 1;
+
+            for (var i = 1; i <= current; i++){
+              document.getElementById(scope.id + i).className = 'icon active';
+            }
+
+            for (var i = firstNotRatedSymbol ; i <= 5; i++) {
+              document.getElementById(scope.id + i).className = 'icon';
+            }
           };
 
           //
           // Handle click
           //
           scope.click = function(icon_index, mode){
-              var i = 1;
-              for (i; i <= icon_index; i++){
-                  document.getElementById(scope.id + i).className = 'icon active';
-              }
-             if (icon_index !== 0)
-                  checked = true;
-             return;
+            for (var i = 1; i <= icon_index; i++){
+              document.getElementById(scope.id + i).className = 'icon active';
+            }
+
+            if(icon_index)
+              current = icon_index;
+            else
+              current = 0;
           };
 
           //
