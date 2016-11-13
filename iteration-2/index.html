@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Semantic UI + AngularJS</title>
+  <link href="node_modules/semantic-ui-css/semantic.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <div ng-controller="RatingController as rating">
+    <sui-rating id="my-rating" size="large" type="star" ng-model="rating.current"></sui-rating>
+  </div>
+
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="src/app/rating/rating.module.js"></script>
+  <script src="src/app/rating/rating.controller.js"></script>
+  <script src="src/app/rating/rating.directive.js"></script>
+  <script src="src/app/rating/rating.directive.controller.js"></script>
+  <script src="src/app/app.module.js"></script>
+  <script src="src/app/bootstrap.js"></script>
+
+</body>
+</html>
