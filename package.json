@@ -10,7 +10,35 @@
   "scripts": {
     "start": "lite-server"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular-buch/angularjs-book-rating.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular-buch/angularjs-book-rating/issues"
+  },
+  "author": {
+    "name": "Angular2Buch Team",
+    "email": "team@angular2buch.de"
+  },
+  "maintainers": [
+    {
+      "name": "johanneshoppe",
+      "email": "johannes.hoppe@haushoppe-its.de"
+    },
+    {
+      "name": "fmalcher",
+      "email": "mail@ferdinand-malcher.de"
+    },
+    {
+      "name": "d-koppenhagen",
+      "email": "mail@d-koppenhagen.de"
+    },
+    {
+      "name": "gregonnet",
+      "email": "gregor.woiwode@gmail.com"
+    }
+  ],
   "dependencies": {
     "angular": "1.6.0-rc.0",
     "semantic-ui-css": "~2.2.4"
