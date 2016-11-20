@@ -8,4 +8,6 @@ import { UpgradeModule } from '@angular/upgrade/static';
     UpgradeModule,
   ]
 })
-export class AppModule { }
+export class AppModule {
+  ngDoBootstrap() {}
+}

@@ -6,7 +6,7 @@
   System.config({
     paths: {
       // paths serve as alias
-      'npm:': 'node_modules/'
+      'npm:': '/node_modules/'
     },
     // map tells the System loader where to look for things
     map: {
@@ -19,13 +19,14 @@
       '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
       '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
-      '@angular/upgrade/static': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
+      '@angular/upgrade': 'npm:@angular/upgrade/bundles/upgrade.umd.js',
+      '@angular/upgrade/static': 'npm:@angular/upgrade/bundles/upgrade-static.umd.js',
       // other libraries
       'rxjs': 'npm:rxjs'
     },
     // packages tells the System loader how to load when no filename and/or no extension
     packages: {
-      app: {
+      'app': {
         main: 'main.js',
         defaultExtension: 'js'
       },

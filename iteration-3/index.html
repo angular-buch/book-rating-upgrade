@@ -5,6 +5,7 @@
   <meta charset="utf-8" />
   <title>Semantic UI + AngularJS</title>
   <link href="node_modules/semantic-ui-css/semantic.css" rel="stylesheet" type="text/css" />
+
   <script src="node_modules/core-js/client/shim.min.js"></script>
   <script src="node_modules/zone.js/dist/zone.js"></script>
   <script src="node_modules/reflect-metadata/Reflect.js"></script>
@@ -13,19 +14,19 @@
   <script>
     System.import('app');
   </script>
+
 </head>
 <body>
   <div ng-controller="RatingController as rating">
     <sui-rating id="my-rating" size="large" type="star" ng-model="rating.current"></sui-rating>
   </div>
-
+  
   <script src="node_modules/angular/angular.js"></script>
   <script src="src/app/rating/rating.module.js"></script>
   <script src="src/app/rating/rating.controller.js"></script>
   <script src="src/app/rating/rating.directive.js"></script>
   <script src="src/app/rating/rating.directive.controller.js"></script>
   <script src="src/app/app.module.ng1.js"></script>
-  <script src="src/app/main.js"></script>
 
 </body>
 </html>

@@ -14,6 +14,7 @@ var static_1 = require('@angular/upgrade/static');
 var AppModule = (function () {
     function AppModule() {
     }
+    AppModule.prototype.ngDoBootstrap = function () { };
     AppModule = __decorate([
         core_1.NgModule({
             imports: [
