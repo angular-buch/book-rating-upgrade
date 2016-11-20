@@ -1,0 +1,69 @@
+{
+  "name": "angularjs-book-rating",
+  "description": "AngularJS book rating app",
+  "version": "0.0.1",
+  "keywords": [
+    "AngularJS",
+    "book",
+    "rating"
+  ],
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular-buch/angularjs-book-rating.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular-buch/angularjs-book-rating/issues"
+  },
+  "author": {
+    "name": "Angular2Buch Team",
+    "email": "team@angular2buch.de"
+  },
+  "maintainers": [
+    {
+      "name": "johanneshoppe",
+      "email": "johannes.hoppe@haushoppe-its.de"
+    },
+    {
+      "name": "fmalcher",
+      "email": "mail@ferdinand-malcher.de"
+    },
+    {
+      "name": "d-koppenhagen",
+      "email": "mail@d-koppenhagen.de"
+    },
+    {
+      "name": "gregonnet",
+      "email": "gregor.woiwode@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "@angular/common": "~2.2.0",
+    "@angular/compiler": "~2.2.0",
+    "@angular/core": "~2.2.0",
+    "@angular/http": "~2.2.0",
+    "@angular/platform-browser": "~2.2.0",
+    "@angular/platform-browser-dynamic": "~2.2.0",
+    "@angular/upgrade": "~2.2.0",
+    "angular": "1.6.0-rc.0",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.8",
+    "rxjs": "5.0.0-beta.12",
+    "semantic-ui-css": "~2.2.4",
+    "systemjs": "0.19.41",
+    "zone.js": "^0.6.26"
+  },
+  "devDependencies": {
+    "@types/angular": "^1.5.19",
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.45",
+    "concurrently": "^3.1.0",
+    "lite-server": "~2.2.2",
+    "typescript": "^2.0.9"
+  }
+}
