@@ -45,6 +45,8 @@ class RatingDirectiveController {
     } else {
       this.current = 0;
     }
+
+    this.model = iconIndex;
   }
 }
 

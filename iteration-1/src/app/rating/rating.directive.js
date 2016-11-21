@@ -74,6 +74,8 @@ function ctrl($scope){
     } else {
       vm.current = 0;
     }
+
+    this.model = iconIndex;
   };
 
   init();
