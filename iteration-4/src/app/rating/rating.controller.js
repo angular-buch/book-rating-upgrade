@@ -4,9 +4,6 @@ var RatingController = (function () {
         this.current = 1;
         console.log(brs);
     }
-    RatingController.prototype.rateBook = function (value) {
-        console.log(value);
-    };
     RatingController.$inject = ['rating'];
     return RatingController;
 }());
