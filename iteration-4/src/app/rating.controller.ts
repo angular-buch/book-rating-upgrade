@@ -1,5 +1,5 @@
 import { downgradeInjectable } from '@angular/upgrade/static';
-import { BookRatingService } from '../shared/book-rating.service';
+import { BookRatingService } from './shared/book-rating.service';
 
 declare var angular: angular.IAngularStatic;
 
@@ -13,5 +13,5 @@ class RatingController {
   }
 }
 
-angular.module('sui-rating')
+angular.module('rating-app')
   .controller('RatingController', RatingController);
