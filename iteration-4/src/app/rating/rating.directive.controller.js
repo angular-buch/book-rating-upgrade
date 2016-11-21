@@ -8,27 +8,27 @@ var RatingDirectiveController = (function () {
         if (this.model < 1 && this.model > 5) {
             this.model = 0;
         }
-        $scope.$watch('model', function (val) {
+        $scope.$watch('vm.model', function (val) {
             _this.clicked(val);
         });
     }
     RatingDirectiveController.prototype.mouseEntered = function (iconIndex) {
         for (var i = 1; i <= iconIndex; i++) {
-            document.getElementById(this.id + i).className = 'icon active';
+            document.getElementById('sui-rating-' + i).className = 'icon active';
         }
     };
     RatingDirectiveController.prototype.mouseLeft = function (iconIndex) {
         var firstNotRatedSymbol = this.current + 1;
         for (var i = 1; i <= this.current; i++) {
-            document.getElementById(this.id + i).className = 'icon active';
+            document.getElementById('sui-rating-' + i).className = 'icon active';
         }
         for (var i = firstNotRatedSymbol; i <= 5; i++) {
-            document.getElementById(this.id + i).className = 'icon';
+            document.getElementById('sui-rating-' + i).className = 'icon';
         }
     };
     RatingDirectiveController.prototype.clicked = function (iconIndex) {
         for (var i = 1; i <= iconIndex; i++) {
-            document.getElementById(this.id + i).className = 'icon active';
+            document.getElementById('sui-rating-' + i).className = 'icon active';
         }
         if (iconIndex) {
             this.current = iconIndex;

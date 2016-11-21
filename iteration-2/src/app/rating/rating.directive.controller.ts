@@ -2,7 +2,6 @@ class RatingDirectiveController {
   static $inject = ['$scope'];
   current = 0;
   model: number;
-  id: string;
 
   constructor($scope: angular.IScope) {
     if (!this.model) { 
@@ -13,14 +12,14 @@ class RatingDirectiveController {
       this.model = 0;
     }
 
-    $scope.$watch('model', (val: number) => {
+    $scope.$watch('vm.model', (val: number) => {
       this.clicked(val);
     });
   }
 
   mouseEntered (iconIndex: number) {
     for (let i = 1; i <= iconIndex; i++) {
-      document.getElementById(this.id + i).className = 'icon active';
+      document.getElementById('sui-rating-'+i).className = 'icon active';
     }
   }
 
@@ -28,17 +27,17 @@ class RatingDirectiveController {
     let firstNotRatedSymbol = this.current + 1;
 
     for (let i = 1; i <= this.current; i++) {
-      document.getElementById(this.id + i).className = 'icon active';
+      document.getElementById('sui-rating-'+i).className = 'icon active';
     }
 
     for (let i = firstNotRatedSymbol; i <= 5; i++) {
-      document.getElementById(this.id + i).className = 'icon';
+      document.getElementById('sui-rating-'+i).className = 'icon';
     }
   }
 
   clicked(iconIndex: number) {
     for (let i = 1; i <= iconIndex; i++) {
-      document.getElementById(this.id + i).className = 'icon active';
+      document.getElementById('sui-rating-'+i).className = 'icon active';
     }
 
     if (iconIndex) {
@@ -50,4 +49,3 @@ class RatingDirectiveController {
 }
 
 angular.module('sui-rating').controller('RatingDirectiveController', RatingDirectiveController);
-
