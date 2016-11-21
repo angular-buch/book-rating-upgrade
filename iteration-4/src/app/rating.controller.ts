@@ -6,10 +6,14 @@ declare var angular: angular.IAngularStatic;
 class RatingController {
   current = 1;
 
-  static $inject = ['rating'];
+  static $inject = ['$scope','rating'];
 
-  constructor(brs: BookRatingService) {
-    console.log(brs);
+  constructor(private $scope: any, private brs: BookRatingService) {
+    let isbn = '9783864903571';
+
+    $scope.$watch(() => this.current, function (value) {
+      brs.rateBook(isbn, value).subscribe(res => res);
+    });
   }
 }
 
