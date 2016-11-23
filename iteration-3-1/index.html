@@ -17,13 +17,16 @@
 
 </head>
 <body>
+
+<!--<ng2-rating-app>Loading...</ng2-rating-app>-->
+
 <div ng-controller="RatingController as rating">
   <sui-rating size="large" type="star" ng-model="rating.current"></sui-rating>
 </div>
 
 <script src="node_modules/angular/angular.js"></script>
 <script src="src/app/rating/rating.module.js"></script>
-<script src="src/app/rating/rating.directive.js"></script>
+<script src="src/app/rating/rating.component.directive.js"></script>
 <script src="src/app/rating/rating.directive.controller.js"></script>
 <script src="src/app/app.module.ng1.js"></script>
 <script src="src/app/rating.controller.js"></script>
